@@ -1,0 +1,28 @@
+Run time analysis
+    
+Task0.py
+    O(1): Constant time
+        We're only printing out the first record of texts and the last record of calls so the runtime is constant since it does NOT depend on the size of calls or texts
+
+Task1.py
+    O(m+n): Linear time
+        We're looping through the calls and texts lists so our runtime is dependent on the size of the text list (m) and the calls list (n). 
+
+Task2.py
+
+
+Task3.py
+    O(n): Linear time
+        
+
+Task4.py
+    O(a+b+c+d): Linear time
+        We're looping through the calls list and adding everybody that makes and outgoing call to a set while we're adding those that make fulfill a criteria to another set. This takes linear time O(a) 
+        
+        We then loop through the texts list and add all the receivers and senders of texts to another list. This takes linear time O(b)
+
+        We then loop through the people_ougoing_calls set that was created and add the user to the results set if(caller not in criteria). This takes linear time O(c)
+
+        Then we loop through the results array and print each number. This also takes linear time O(d)
+
+        Hence the runtime is O(a+b+c+d)
