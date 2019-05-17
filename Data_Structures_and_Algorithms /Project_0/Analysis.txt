@@ -12,8 +12,12 @@ Task2.py
 
 
 Task3.py
-    O(n): Linear time
+    O(n+m+nlogn): Linear time
+        We're looping through calls and adding the area codes that fit a specific criteria to a set. This has a runtime of O(m)
         
+        We then sort the area code and loop through it. The sorted function has a worst case of O(nlogn)
+        
+        We then loop through the sorted_area_codes. This has a time complexity of O(n)
 
 Task4.py
     O(a+b+c+d): Linear time
