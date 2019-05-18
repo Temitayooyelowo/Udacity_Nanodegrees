@@ -9,7 +9,8 @@ Task1.py
         We're looping through the calls and texts lists so our runtime is dependent on the size of the text list (m) and the calls list (n). 
 
 Task2.py
-
+    O(n): Linear time
+        We loop through the list of calls and this depends on the length of the calls list
 
 Task3.py
     O(n+m+nlogn): Linear time
