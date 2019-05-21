@@ -87,7 +87,7 @@ def create_area_codes():
   for code in sorted(area_codes):
     print(code)
   
-  percentage = round(bang_calls_count/bang_code_counter,2)
+  percentage = round((bang_code_counter/bang_calls_count)*100, 2)
   print(f"\n{percentage} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.")
 
 create_area_codes()

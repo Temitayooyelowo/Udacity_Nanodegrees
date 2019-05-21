@@ -50,7 +50,7 @@ def solution():
             results.add(caller)
 
     print("These numbers could be telemarketers: ")
-    for result in results:  
+    for result in sorted(results):  
         print(f"{result}")
 
 solution()
