@@ -2,6 +2,9 @@ class Huffman:
     def __init__(self):
         self.root = None
 
+def takeSecond(elem):
+    return elem[1]
+
 def get_frequency_of_characters(string):
     frequency_map = {}
     for char in string:
@@ -10,7 +13,7 @@ def get_frequency_of_characters(string):
         else:
             frequency_map[char] = 1
     
-    return frequency_map.values()
+    return sorted(frequency_map.items(),key=takeSecond)
 
 a_great_sentence = "The bird is the word"
 print(get_frequency_of_characters(a_great_sentence))
