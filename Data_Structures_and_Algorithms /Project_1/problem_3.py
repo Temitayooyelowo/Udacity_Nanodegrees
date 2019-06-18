@@ -17,3 +17,5 @@ def get_frequency_of_characters(string):
 
 a_great_sentence = "The bird is the word"
 print(get_frequency_of_characters(a_great_sentence))
+
+# Build the Huffman Tree by assigning a binary code to each letter, using shorter codes for the more frequent letters. (This is the heart of the Huffman algorithm.)
