@@ -40,7 +40,7 @@ def is_user_in_group(user, group):
       user(str): user name/id
       group(class:Group): group to check user membership against
     """
-    if len(group.get_users()) == 0 and len(group.get_groups()) == 0:
+    if not user or (len(group.get_users()) == 0 and len(group.get_groups()) == 0):
         return False
 
     if user in group.users:

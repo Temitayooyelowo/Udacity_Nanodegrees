@@ -18,6 +18,16 @@ class Problem2(unittest.TestCase):
         self.assertEqual(len(result), len(expected_result))
         for expected_value in expected_result:
             self.assertTrue(expected_value in result)
+    
+    def test_file_name_in_directory(self):
+        file_finder = FileFinder()
+        result = file_finder.find_files("a.c", f"{getcwd()}/testdir")
+        expected_result = ['a.c', 'a.c']
+
+        self.assertEqual(len(result), len(expected_result))
+        for expected_value in expected_result:
+            self.assertTrue(expected_value in result)
+
 
 if __name__ == '__main__':
     unittest.main()
