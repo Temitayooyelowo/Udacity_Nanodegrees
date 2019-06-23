@@ -1,0 +1,1 @@
+Used a list to store the elements in the result. Then I check if the path is a file or a directory. If it's a file I append to the result if it has the suffix. If it's a directory then I check all the elements in the directory.

@@ -1,0 +1,1 @@
+I used recursion for this since a group can have other groups. It returns true if the user is found in a group and returns false if it's not found in the group. If it's not found in the group then it continues checking as long as there are other nested groups but if it's found then it returns True and stops.
